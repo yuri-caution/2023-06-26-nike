@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+:root {
+    --title-01: 60px;
+    --title-02: 40px;
+    --title-02: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+.button {
+    width: 256px;
+    height: 64px;
+    display: inline-block;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+}
+
+.button.round {
+    border-radius: 64px;
+}
+
+.button.line {}
+
+body {
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo';
+    font-weight: 400;
+}
+
+.bars, .close {
+    display: none;
+}
+
+.header {
+    height: 150px;
+    padding: 0 20px;
+    max-width: 1320px;
+    margin: 0 auto ;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gnb {}
+
+.gnb ul {
+    display: flex;
+    gap: 50px;
+}
+
+.gnb ul li a {
+    display: block;
+    padding: 20px 0;
+    font-weight: 500;
+}
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    display: block;
+    width: 130px;
+}
+
+.top_menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.top_menu img {
+    display: block;
+    width: 28px;
+}
