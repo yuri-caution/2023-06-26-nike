@@ -6,9 +6,9 @@
     height: 648px;
     position: relative;
     background-image: url(../images/nike_01.png);
-    background-size: 40%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-position: 450px -10px;
+    background-position: 450px -80px;
 }
 
 .hero .text_box {
