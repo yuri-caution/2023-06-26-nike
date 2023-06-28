@@ -4,7 +4,7 @@
 :root {
     --title-01: 60px;
     --title-02: 40px;
-    --title-02: 30px;
+    --title-03: 30px;
 }
 
 * {
@@ -42,7 +42,11 @@ img {
     border-radius: 64px;
 }
 
-.button.line {}
+.button.line {
+    background-color: #ffffff;
+    border: 1px solid #111111;
+    color: #111111;
+}
 
 body {
     line-height: 1.5;
@@ -53,20 +57,31 @@ body {
     font-weight: 400;
 }
 
-.bars, .close {
+
+.bars {
     display: none;
 }
 
+.bars img {
+    width: 38px;
+}
+
+.close {
+    display: none;
+}
+
+
+/* header */
+
 .header {
-    height: 150px;
-    padding: 0 20px;
     max-width: 1320px;
     margin: 0 auto ;
-    border-bottom: 1px solid #ccc;
+    height: 150px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #ffffff;
 }
 
 .gnb {}
@@ -102,4 +117,220 @@ body {
 .top_menu img {
     display: block;
     width: 28px;
+}
+
+
+
+
+/* footer */
+.footer {
+    padding: 100px 80px 55px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.links {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.f_menu {
+    flex: 1;
+    display: flex;
+}
+
+.f_menu > li {
+    width: 218px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f_menu p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.f_menu > li a {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.sns {
+    width: 200px;
+}
+
+.sns p {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.sns ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sns ul li a img {
+    width: 36px;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #ffffff;
+    opacity: 50%;
+    font-weight: 400;
+}
+
+
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+
+    .button.round {
+        width: 155px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+        
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 10;
+        padding: 0 20px;
+    }
+
+    .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        z-index: 1;
+        padding-top: 100px;
+        transition: left 0.3s;
+    }
+
+    .gnb.active {
+        left: 0;
+    }
+    
+    .gnb ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+
+    .gnb ul li a {
+        font-size: 26px;
+        padding: 26px 0 ;
+    }
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .top_menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .top_menu img {
+        display: block;
+        width: 20px;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .close {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 1;
+    }
+
+    .close img {
+        width: 30px;
+        filter: brightness(0) invert(1);
+    }
+
+
+
+    /* footer */
+    .footer {
+        padding: 100px 30px 55px;
+    }
+
+    .links {
+        margin-bottom: 60px;
+        gap: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f_menu {
+        flex: initial;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .f_menu > li {
+        width: initial;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+
+    .f_menu p {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .f_menu > li a {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .sns p {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .sns ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .sns ul li a img {
+        width: 36px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
 }

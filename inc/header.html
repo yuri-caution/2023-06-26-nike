@@ -1,0 +1,28 @@
+<div class="bars"><img src="../images/bars.png" alt="모바일 메뉴 버튼"></div>
+<div class="gnb">
+    <ul>
+        <li><a href="../pages/women.html">Women</a></li>
+        <li><a href="../pages/man.html">Man</a></li>
+        <li><a href="../pages/kids.html">Kids</a></li>
+        <li><a href="../pages/Accessories.html">Accessories</a></li>
+        <li><a href="../pages/sale.html">Sale    </a></li>
+    </ul>
+    <div class="close"><img src="../images/close.png" alt="모바일 메뉴 닫기 버튼"></div>
+</div>
+<a href="../pages/main.html" class="logo"><img src="../images/logo.png" alt="나이키 로고"></a>
+<div class="top_menu">
+    <a href="#x"><img src="../images/search.png" alt="검색 버튼"></a>
+    <a href="#x"><img src="../images/cart.png" alt="장바구니 버튼"></a>
+</div>
+
+<script>
+    $('.bars').on('click', function(){
+            $('.gnb').addClass('active')
+            $('.close').fadeIn()
+        })
+
+        $('.close').on('click', function(){
+            $('.gnb').removeClass('active')
+            $(this).hide()
+        })
+</script>

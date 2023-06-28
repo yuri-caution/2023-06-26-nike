@@ -1,0 +1,229 @@
+.temp {
+    max-width: 1320px;
+    height: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+/* top */
+.top {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 648px;
+    position: relative;
+    background-image: url(../images/nike_02.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 660px -80px;
+}
+
+.top.m {
+    transform: scaleY(-1);
+}
+
+.top .text_box {
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+}
+
+.top .text_box.m {
+    transform: scaleY(-1);
+    bottom: 310px;
+}
+.top .text_box h1 {
+    font-size: var(--title-01);
+    font-weight: 900;
+}
+.top .text_box p {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 20px 0 40px;
+    width: 65%;
+}
+
+/* section_1 */
+.section_1 {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    margin: 50px auto;
+    margin-bottom: 128px;
+}
+
+.banner .photo {
+    background-color: #dddddd;
+    color: #ffffff;
+    width: 632px;
+    height: 632px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.banner h2 {
+    font-weight: 900;
+    font-size: var(--title-02);
+}
+.banner p {
+    font-size: 18px;
+    margin: 20px 30px 30px 0;
+}
+.banner a {}
+
+
+
+/* slick_item */
+.slick_item {
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.slick_item h4 {
+    font-weight: 900;
+    font-size: var(--title-03);
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.slick_item ul li {
+    width: 308px;
+    margin-right: 16px;
+}
+
+.slick_item ul li a .photo {
+    height: 308px;
+    background-color: #eee;
+    text-align: center;
+    align-items: center;
+    line-height: 308px;
+}
+
+.slick_item ul li a .titles {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.slick_item ul li a .titles h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) { 
+    .top {
+        background-image: url(../images/nike_02.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 120px 220px;
+        padding-top: 400px;
+    }
+
+    .top.m {
+        transform: scaleY(-1);
+    }
+
+    .top .text_box {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -380px;
+    }
+
+    .top .text_box.m {
+        transform: scaleY(-1);
+        bottom: 310px;
+    }
+    .top .text_box h1 {
+        font-size: var(--title-02);
+        font-weight: 900;
+    }
+    .top .text_box p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0 20px;
+        width: 65%;
+    }
+
+    /* section_1 */
+    .section_1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 66px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 46px;
+    }
+
+    .banner .photo {
+        margin: 0 auto;
+        background-color: #dddddd;
+        color: #ffffff;
+        width: 330px;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .banner h2 {
+        font-weight: 900;
+        font-size: var(--title-02);
+    }
+    .banner p {
+        font-size: 18px;
+        margin: 10px auto 40px;
+        line-height: 1.7;
+    }
+
+    .banner a {}
+
+    .slick_item {
+        padding: 0 20px;
+        position: relative;
+        height: 400px;
+        margin-bottom: 110px;
+    }
+
+    .slick_item h4 {
+        font-weight: 900;
+        font-size: var(--title-03);
+        margin-top: 110px auto 30px;
+        margin-bottom: 30px;
+    }
+
+    .slick_item ul {
+        position: absolute;
+        left: 20px;
+        width: 150%;
+        height: 246px;
+    }
+
+    .slick_item ul li {
+        width: 308px;
+        margin-right: 16px;
+    }
+
+    .slick_item ul li a .photo {
+        height: 246px;
+        line-height: 246px;
+    }
+
+}
